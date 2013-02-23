@@ -72,17 +72,17 @@ a:hover{
 .arrow1{
     width: 75px;
     height: 75px;
-    position: absolute;
+    position: fixed;
     float:left;
-    margin-top:40%;
+    margin-top:20%;
 }
 .arrow2{
     width: 75px;
     height: 75px;
-    position: absolute;
+    position: fixed;
     float:right;
     margin-left:92%;
-    margin-top:40%;
+    margin-top:20%;
     -ms-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -98,12 +98,12 @@ a:hover{
 }
 
 .bcont{
-    margin-top:-10%;
+    margin-top:-5%;
     width: 80%;
 }
 
 .pcont{
-    margin-top:-10%;
+    margin-top:-7%;
     width: 80%;
     position: relative;
 }
