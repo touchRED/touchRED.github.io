@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Connor Trotter</title>
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
     <script src = "http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script src = "navigation.js"></script>
+	<!--<script src = "navigation.js"></script>
     <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -21,44 +22,24 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
-    </script>
+    </script>-->
 </head>
 <body id = "body">
+	
+<script>
+	$(document).ready(function(){
+		$('body').hide().fadeIn(1000);
+	});
+</script>
 
-<a href = "#"><img class = "arrow1" src = "img/arrow.png"></a>
-<a href = "#"><img class = "arrow2" src = "img/arrow.png"></a>
+<header></header>
 
 <div id = "home">
 	<div id = "container" class = "hcont">
-		<h1>furblesmith.</h1>
-		<p>
-		I'm a creator. It's as simple as that. 
-        I'm currently in high school, dreaming of becoming an interactive developer and influencing the world someday. 
-        If you feel the same way, I think you're pretty cool. 
-		<p>
-        <p>Use those keys...</p>
-        <img class = "keyboard" src = "img/keyboard.png">
-    </div>
-    
-    <p id = "attr">Keyboard icon by Thomas Le Bas</p>
-</div>
-
-<div id = "blog">
-    <div id = "container" class = "bcont">
-		<h1>Blog</h1>
-        <hr width = "40%">
-        <ul>{{ content }}</ul>
-    </div>
-</div>
-
-<div id = "projects">
-    <div id = "container" class = "pcont">
-		<h1>Projects</h1>
-        
-        <div id = "proj"><a href = 'http://furblesmith.koding.com/badass.html' target = '_blank' ><img src = 'img/badass.png' alt = "badass" width = '250' height = '175'></a></div>
-        <div id = "proj"><a href = 'http://furblesmith.koding.com/the_bloc.html' target = '_blank'><img src = 'img/bloc_logo.png' alt = "the bloc" width = '250' height = '175'></a></div>
-        <div id = "proj"><a href = 'http://furblesmith.koding.com/wander/' target = '_blank'><img src = 'img/wanderscreen.png' alt = "wander" width = '250' height = '175'></a></div>
-        <div id = "proj"><a href = 'http://furblesmith.koding.com/aleph/' target = '_blank' ><img src = 'img/aleph_icon.png' alt = "aleph" width = '250' height = '175' z-index = '-1'></a></div>
+		<img class = "circle" src = "img/me_circle.png" height = "200px" width = "200px">
+		<h1>furblesmith</h1>
+		<hr>
+		<p>Connor Trotter</p> 
     </div>
 </div>
 </body>
