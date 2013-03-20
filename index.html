@@ -4,6 +4,9 @@ layout: default
 
 {% for post in site.posts %}
 
-<li>{{ post.title }}</li>
+<div id = "post">
+	<h2>{{ post.title }}</h2>
+	<p>{{ post.content }}</p>
+</div>
 
 {% endfor %}
