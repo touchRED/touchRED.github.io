@@ -2,11 +2,13 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+<h2><em>Blog</em></h2>
+<div id = "blogreel">
+	{% for post in site.posts %}
 
-<div id = "post">
-	<h2><a href = {{post.url}}>{{ post.title }}</a></h2>
-	<p>{{ post.content }}</p>
+	<div id = "post">
+		<h2><a href = {{post.url}}>{{ post.title }}</a></h2>
+	</div>
+
+	{% endfor %}
 </div>
-
-{% endfor %}

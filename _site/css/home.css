@@ -15,26 +15,55 @@ header{
 	padding: 0%;
 	width: 100%;
 	height: 1%;
-	background-color: #ee0000;
+	background-color: #BF4040;
 }
 
 #container{
 	position: absolute;
 	width: 80%;
 	height: 100%;
-	top: 15%;
+	top: 10%;
 	left: 10%;
 	/*margin-top: -150px;*/
 	/*margin-left: -250px;*/
 	text-align: center;
 }
 
+#nav{
+	margin-bottom: 5%;
+}
+
 h1{
-	font-size: 645%;
+	font-size: 545%;
     /*text-shadow: 0 15px 30px #222;*/
 	line-height: 100%;
     margin-top: 2%;
 	margin-bottom: 0px;
+}
+
+ul{
+	list-style-type: none;
+	width: 50%;
+	margin: auto;
+	padding:0;
+}
+
+li{
+	display: inline;
+	margin-right: 10px;
+}
+
+.name{
+	font-size: 135%;
+}
+
+a{
+	text-decoration: none;
+	color: #BF4040;
+}
+
+a:hover{
+	color: #3D83B8;
 }
 
 h2{
@@ -49,6 +78,7 @@ p{
 	font-family: 'Helvetica Neue', sans-serif;
     margin-bottom: 20px;
     font-size: 20px;
+	/*width: 50%;*/
 }
 
 hr{
@@ -75,7 +105,11 @@ hr{
 #post a{
 	text-decoration: none;
 	color: #000000;
-	border-bottom: 1px dotted #0000ff;
+	border-bottom: 1px dotted #BF4040;
+}
+
+#post h2{
+	margin-bottom: 5%;
 }
 
 #post a:hover;{
@@ -85,8 +119,34 @@ hr{
 	border-color: #0000ff;
 }
 
+#about p{
+	width: 50%;
+}
+
+#about ul{
+	list-style-type: circle;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#about li{
+	display: block;
+}
+
+article{
+	width: 100%;
+	margin: auto;
+}
+
 section h1{
 	font-size: 345%;
+	margin-bottom: 5%;
+}
+
+section p{
+	float: left;
 }
 
 

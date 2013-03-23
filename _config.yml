@@ -1,3 +1,4 @@
 server: true
 pygments: true
-permalink: /:year/:title/
+permalink: /:year/:month/:title/
+auto: true
