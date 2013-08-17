@@ -1,4 +1,3 @@
-server: true
+serve: true
 pygments: true
 permalink: /:year/:month/:title/
-auto: true
