@@ -150,6 +150,11 @@ article{
 	margin: auto;
 }
 
+article img{
+	display: block;
+	margin: auto;
+}
+
 section{
 	text-align: left;
 }
