@@ -30,7 +30,7 @@ header{
 	text-align: center;
 }
 
-.nav img{
+.nav_icon img{
 	display:none;
 	margin: 0 auto;
 }
@@ -132,7 +132,8 @@ hr{
 }
 
 #about p{
-	width: 50%;
+	width: 75%;
+	text-indent: 2%;
 }
 
 #about ul{
@@ -183,16 +184,19 @@ img{
 	#post h2{
 		font-size: 165%;
 	}
-	#container li{
-		display: block;
+	section h1{
+		font-size: 300%;
 	}
 }
 
 @media (max-width: 1050px){
-	ul{
+	#nav ul{
 		display:none;
 	}
-	.nav img{
+	#container li{
+		display: block;
+	}
+	.nav_icon img{
 		display:block;
 	}
 }
