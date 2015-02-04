@@ -1,4 +1,5 @@
-touchred.github.com
----
+#Connor Trotter
 
-Personal Website, blog powered by Jekyll.
+===
+
+A site for the codes and the designs.

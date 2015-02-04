@@ -1,0 +1,16 @@
+---
+layout: default
+title: Connor Trotter
+---
+
+<h2><em>Blog</em></h2>
+<div id = "blogreel">
+	{% for post in site.posts %}
+
+	<div id = "post">
+		<h2><a href = {{post.url}}>{{ post.title }}</a></h2>
+		<p><em>{{ post.date | date_to_string }}</em></p>
+	</div>
+
+	{% endfor %}
+</div>
