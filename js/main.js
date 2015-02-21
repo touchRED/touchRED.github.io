@@ -17,7 +17,7 @@ var canvas = document.querySelector('canvas');
 
 var geometry = new THREE.PlaneGeometry(200,200,20,20);
 
-var material = new THREE.MeshBasicMaterial({color: 0xdddddd, wireframe: true});
+var material = new THREE.MeshBasicMaterial({color: 0xcdcdcd, wireframe: true});
 
 var plane = new THREE.Mesh(geometry, material);
 

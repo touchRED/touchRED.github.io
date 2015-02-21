@@ -134,6 +134,7 @@ h1{
 }
 ul{
     padding: 0;
+    margin-right: -25px;
 }
 
 li{
