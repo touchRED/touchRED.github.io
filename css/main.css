@@ -113,6 +113,10 @@ body{
     background-color: #efefef;
 }
 
+body *{
+    z-index: 1;
+}
+
 #header{
     margin-bottom: 23%;
 }
@@ -148,7 +152,6 @@ p{
     top: 45%;
     line-height: 50px;
     width:100%;
-    z-index: 1;
 }
 
 #mag{
@@ -252,6 +255,25 @@ canvas{
     }
     li{
         font-size: 80%;
+    }
+    
+}
+@media (max-height: 500px){
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    p{
+        font-size: 80%;
+    }
+    li{
+        font-size: 80%;
+    }
+    ul{
+        margin-top:0;
     }
     
 }
