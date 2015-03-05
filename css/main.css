@@ -245,9 +245,9 @@ canvas{
     
 }
 @media (max-width: 395px){
-    body{
+    /*body{
         overflow: hidden;
-    }
+    }*/
     h1{
         font-size: 35px;
         line-height: 50px;
@@ -273,9 +273,7 @@ canvas{
     }
     p{
         font-size: 80%;
-        width:70%;
-        margin-left: 15%;
-        margin-right: 15%;
+
     }
     li{
         font-size: 80%;
