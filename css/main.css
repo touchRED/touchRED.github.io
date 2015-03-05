@@ -270,6 +270,9 @@ canvas{
     }
     p{
         font-size: 80%;
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     li{
         font-size: 80%;
