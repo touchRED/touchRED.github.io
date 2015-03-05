@@ -262,9 +262,18 @@ canvas{
     li{
         font-size: 80%;
     }
-    
+    canvas{
+        width: 100%;
+    }
 }
 @media (max-height: 500px){
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    canvas{
+        width: 100%;
+    }
     h1{
         font-size: 35px;
         line-height: 50px;
