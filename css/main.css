@@ -111,6 +111,7 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
+    overflow: hidden;
 }
 
 body *{
@@ -274,6 +275,25 @@ canvas{
     }
     ul{
         margin-top:0;
+    }
+    
+}
+@media (max-height: 500px) and (max-width: 395){
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    p{
+        font-size: 80%;
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    li{
+        font-size: 80%;
     }
     
 }
