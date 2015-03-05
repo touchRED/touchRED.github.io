@@ -111,7 +111,7 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 body *{
