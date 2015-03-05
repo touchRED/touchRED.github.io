@@ -109,7 +109,7 @@ body{
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     font-family: 'Cutive Mono';
-    font-size: 18px;
+    font-size: 110%;
     background-color: #efefef;
 }
 
@@ -120,6 +120,7 @@ body{
 h1{
     text-align: center;
     font-family: 'Big John';
+    font-variant: normal;
     position: absolute;
     padding: 0;
     margin: 0;
@@ -232,6 +233,22 @@ canvas{
     }
     p{
         font-size: 80%;
+    }
+    li{
+        font-size: 80%;
+    }
+    
+}
+@media (max-width: 395px){
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    p{
+        font-size: 80%;
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     li{
         font-size: 80%;
