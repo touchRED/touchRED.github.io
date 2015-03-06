@@ -116,6 +116,7 @@ body{
 
 body *{
     z-index: 1;
+    overflow: hidden;
 }
 
 #header{
