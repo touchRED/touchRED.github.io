@@ -120,10 +120,12 @@ body *{
 }
 
 #header{
+    display: none;
     margin-bottom: 23%;
 }
 
 h1{
+    display: none;
     text-align: center;
     font-family: 'Big John';
     font-variant: normal;
@@ -150,6 +152,7 @@ li{
 }
 
 p{
+    display: none;
     position: absolute;
     top: 45%;
     line-height: 50px;

@@ -43,7 +43,17 @@ var render = function(){
 }
 
 $(document).ready(function(){
-	render(); 
+	render();
+	
+	setTimeout(function() {
+	    $("h1").fadeToggle("slow");
+	}, 1500);
+	setTimeout(function() {
+	    $("#header").fadeToggle("slow");
+	}, 3000);
+	setTimeout(function() {
+	    $("p").fadeToggle("slow");
+	}, 4500);
 });
 
 
