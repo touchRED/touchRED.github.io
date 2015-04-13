@@ -46,11 +46,15 @@ $(document).ready(function(){
 	render();
 	
 	setTimeout(function() {
-	    $("h1").fadeToggle("slow");
+	    $("canvas").fadeToggle("slow");
 	}, 500);
+
+	setTimeout(function() {
+	    $("h1").fadeToggle("slow");
+	}, 1000);
 	setTimeout(function() {
 	    $("#header").fadeToggle("slow");
-	}, 1000);
+	}, 1500);
 	setTimeout(function() {
 	    $("p").fadeToggle("slow");
 	}, 1500);
