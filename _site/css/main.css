@@ -97,19 +97,228 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face{
+    font-family: "Big John";
+    src: url("BIGJOHN.otf");
+}
+
+body{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Cutive Mono';
+    font-size: 110%;
+    background-color: #efefef;
+    overflow: hidden;
+}
+
+body *{
+    z-index: 1;
+    overflow: hidden;
+}
+
+#header{
+    display: none;
+    margin-bottom: 23%;
+}
+
+h1{
+    display: none;
+    text-align: center;
+    font-family: 'Big John';
+    font-variant: normal;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 25%;
+    right: 25%;
+    top:10%;
+    font-size: 100px;
+    width: 50%;
+    line-height: 125px;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+ul{
+    padding: 0;
+    margin-right: -25px;
+}
+
+li{
+    display: inline;
+    padding-right: 25px;
+}
+
+p{
+    display: none;
+    position: absolute;
+    top: 45%;
+    line-height: 50px;
+    width:100%;
+}
+
+#mag{
+    color: #CB06A0;
+    top: 10%;
+}
+#yell{
+    color: #FFF937;
+    top: 11%;
+}
+#cyan{
+    color: #3FD7EE;
+    top: 9%;
+}
+
+canvas{
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 35%;
+    background-color: #dedede;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+}
 
 
 
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
 
 
+@media (max-width: 1100px){
+    h1{
+        font-size: 75px;
+        line-height: 90px;
+    }
+    p{
+        top: 37%;
+    }
+    canvas{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 940px){
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
 
-
-
-
-
-
-
-
+    p{
+        top: 28%;
+    }
+    canvas{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 570px){
+    h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    p{
+        font-size: 90%;
+        left:0;
+        right:0;
+        width: 100%;
+        text-align: center;
+    }
+    li{
+        font-size: 90%;
+    }
+    
+}
+@media (max-width: 435px){
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    p{
+        font-size: 80%;
+    }
+    li{
+        font-size: 80%;
+    }
+    
+}
+@media (max-width: 395px){
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    p{
+        font-size: 80%;
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    li{
+        font-size: 80%;
+    }
+    canvas{
+        width: 100%;
+    }
+}
+@media (max-height: 500px){
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    canvas{
+        width: 100%;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    p{
+        font-size: 80%;
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    li{
+        font-size: 80%;
+    }
+    ul{
+        margin-top:0;
+    }
+    
+}
+/*@media (max-height: 500px) and (max-width: 395px){
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    p{
+        font-size: 80%;
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    li{
+        font-size: 80%;
+    }
+    
+}*/
 
 
 
