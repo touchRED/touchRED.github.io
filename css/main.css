@@ -111,10 +111,6 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
-    /*background-image: url("../img/cityscape.JPG");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;*/
     background: url("../img/cityscape.JPG") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -149,6 +145,8 @@ h1{
     line-height: 125px;
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
 }
 
 .contact{
@@ -329,25 +327,12 @@ canvas{
     }
     
 }
-/*@media (max-height: 500px) and (max-width: 395px){
-    h1{
-        font-size: 35px;
-        line-height: 50px;
-        width: 100%;
-        left: 0;
-        right: 0;
+
+@media only screen and (max-width: 767px){
+    body{
+        background-image: url("../img/cityscape_mobile.JPG");
     }
-    p{
-        font-size: 80%;
-        width:70%;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    li{
-        font-size: 80%;
-    }
-    
-}*/
+}
 
 
 
