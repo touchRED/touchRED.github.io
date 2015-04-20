@@ -330,7 +330,8 @@ canvas{
 
 @media only screen and (max-width: 767px){
     body{
-        background-image: url("../img/cityscape_mobile.JPG");
+        background: url("../img/cityscape_mobile.JPG") no-repeat center center fixed;
+        background-size: cover;
     }
 }
 
