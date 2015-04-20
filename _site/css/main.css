@@ -102,6 +102,10 @@ textarea {
     src: url("BIGJOHN.otf");
 }
 
+html{
+    height: 100%;
+}
+
 body{
     text-align: center;
     padding: 0;
@@ -111,11 +115,14 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
-    background: url("../img/cityscape.JPG") no-repeat center center fixed;
+    background-image: url("../img/cityscape.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
     overflow: hidden;
 }
 
@@ -330,7 +337,7 @@ canvas{
 
 @media only screen and (max-width: 767px){
     body{
-        background: url("../img/cityscape_mobile.JPG") center center cover no-repeat fixed;
+        background-image: url("../img/cityscape_mobile.JPG");
     }
 }
 
