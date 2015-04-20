@@ -12,7 +12,7 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, (window.innerHeight*0.35));
 renderer.setClearColor(0xefefef);
 
-$('body').append(renderer.domElement);
+// $('body').append(renderer.domElement);
 
 var canvas = document.querySelector('canvas');
 
@@ -52,20 +52,16 @@ var render = function(){
 
 $(document).ready(function(){
 	render();
-	
-	setTimeout(function() {
-	    $("canvas").fadeToggle("slow");
-	}, 500);
 
 	setTimeout(function() {
 	    $("h1").fadeToggle("slow");
-	}, 1000);
+	}, 500);
 	setTimeout(function() {
 	    $("#header").fadeToggle("slow");
-	}, 1500);
+	}, 1000);
 	setTimeout(function() {
 	    $("p").fadeToggle("slow");
-	}, 1500);
+	}, 1000);
 });
 
 
