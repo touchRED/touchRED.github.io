@@ -58,9 +58,8 @@ $(document).ready(function(){
 	}, 500);
 	setTimeout(function() {
 	    $("#header").fadeToggle("slow");
-	}, 1000);
-	setTimeout(function() {
 	    $("p").fadeToggle("slow");
+	    $(".contact").fadeToggle("slow");
 	}, 1000);
 });
 
