@@ -111,11 +111,15 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
-    background-image: url("../img/cityscape.JPG");
+    /*background-image: url("../img/cityscape.JPG");
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    background: url("../img/cityscape.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
