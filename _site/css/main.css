@@ -126,9 +126,14 @@ body{
     overflow: hidden;
 }
 
-body *{
-    z-index: 1;
-    overflow: hidden;
+#work{
+    display: none;
+}
+
+#work a{
+    position: absolute;
+    left:10px;
+    top:1em;
 }
 
 #header{
@@ -318,6 +323,10 @@ p{
     }
     ul{
         margin-top:0;
+    }
+    #work a{
+        top:10px;
+        font-size: 80%;
     }
     
 }

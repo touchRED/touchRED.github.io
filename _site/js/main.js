@@ -25,9 +25,28 @@ var render = function(){
 	t += 5;
 }
 
+$("li:nth-of-type(3)").on('click', function(e){
+	e.preventDefault();
+	$("#container").fadeOut('slow');
+	setTimeout(function(){
+		$("#work").fadeIn('slow');
+	},1000);
+	history.pushState({foo: "bar"}, "work page" ,"work");
+});
+
+$("#work a").on('click', function(e){
+	e.preventDefault();
+	$("#work").fadeOut('slow');
+	setTimeout(function(){
+		$("#container").fadeIn('slow');
+	},1000);
+	history.pushState({foo: "foo"}, "home page" ,"/");
+});
+
 $(document).ready(function(){
 	render();
 
+	console.log(window.location.href.split("/"));
 	setTimeout(function() {
 	    $("h1").fadeToggle("slow");
 	}, 500);
