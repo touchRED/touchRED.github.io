@@ -104,6 +104,7 @@ textarea {
 
 html{
     height: 100%;
+    overflow: hidden;
 }
 
 body{
@@ -126,6 +127,12 @@ body{
     overflow: hidden;
 }
 
+a, a:hover, a:visited, a:focus{
+    color: #000;
+    border: none;
+    outline: none;
+}
+
 #work{
     display: none;
 }
@@ -133,7 +140,11 @@ body{
 #work a{
     position: absolute;
     left:10px;
-    top:1em;
+    top:17.6px;
+}
+
+#work h1{
+    border-bottom: 1px solid Black;
 }
 
 #header{
@@ -159,9 +170,10 @@ h1{
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
+    color:#303030;
 }
 
-.contact{
+.contact, .contact:hover, .contact:visited{
     position: absolute;
     padding: 0;
     margin: 0;
@@ -260,6 +272,10 @@ p{
     li{
         font-size: 90%;
     }
+    #work a{
+        top:10px;
+        font-size: 90%;
+    }
     
 }
 @media (max-width: 435px){
@@ -271,6 +287,10 @@ p{
         font-size: 80%;
     }
     li{
+        font-size: 80%;
+    }
+    #work a{
+        top:10px;
         font-size: 80%;
     }
     
@@ -295,6 +315,10 @@ p{
     }
     canvas{
         width: 100%;
+    }
+    #work a{
+        top:10px;
+        font-size: 80%;
     }
 }
 @media (max-height: 500px){

@@ -126,6 +126,10 @@ body{
     overflow: hidden;
 }
 
+a, a:hover, a:visited{
+    color: #000;
+}
+
 #work{
     display: none;
 }
@@ -159,6 +163,7 @@ h1{
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
+    color: #f1f1f1;
 }
 
 .contact{

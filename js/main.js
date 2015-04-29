@@ -27,19 +27,19 @@ var render = function(){
 
 $("li:nth-of-type(3)").on('click', function(e){
 	e.preventDefault();
-	$("#container").fadeOut('slow');
+	$("#container").fadeOut();
 	setTimeout(function(){
-		$("#work").fadeIn('slow');
-	},1000);
+		$("#work").fadeIn();
+	},750);
 	history.pushState({foo: "bar"}, "work page" ,"work");
 });
 
 $("#work a").on('click', function(e){
 	e.preventDefault();
-	$("#work").fadeOut('slow');
+	$("#work").fadeOut();
 	setTimeout(function(){
-		$("#container").fadeIn('slow');
-	},1000);
+		$("#container").fadeIn();
+	},750);
 	history.pushState({foo: "foo"}, "home page" ,"/");
 });
 
