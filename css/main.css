@@ -104,7 +104,7 @@ textarea {
 
 html{
     height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 body{
@@ -124,7 +124,7 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 a, a:hover, a:visited, a:focus{
@@ -135,13 +135,27 @@ a, a:hover, a:visited, a:focus{
 
 #work{
     display: none;
+    overflow: scroll;
 }
 
-#work a{
+#work .back{
     position: absolute;
     left:10px;
     top:17.6px;
 }
+
+#work div{
+    width: 50%;
+    height: 250px;
+    margin: auto;
+}
+
+#work img{
+    margin: auto;
+    margin-bottom: 20px;
+    width:50%;
+}
+
 
 #work h1{
     border-bottom: 1px solid Black;
@@ -149,7 +163,7 @@ a, a:hover, a:visited, a:focus{
 
 #header{
     display: none;
-    margin-bottom: 23%;
+    margin-bottom: 15%;
 }
 
 h1{
@@ -276,6 +290,9 @@ p{
         top:10px;
         font-size: 90%;
     }
+    #header{
+        margin-bottom: 19%;
+    }
     
 }
 @media (max-width: 435px){
@@ -292,6 +309,13 @@ p{
     #work a{
         top:10px;
         font-size: 80%;
+    }
+    #work img{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #header{
+        margin-bottom: 25%;
     }
     
 }

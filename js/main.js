@@ -34,7 +34,7 @@ $("li:nth-of-type(3)").on('click', function(e){
 	history.pushState({foo: "bar"}, "work page" ,"work");
 });
 
-$("#work a").on('click', function(e){
+$(".back").on('click', function(e){
 	e.preventDefault();
 	$("#work").fadeOut();
 	setTimeout(function(){
