@@ -46,15 +46,7 @@ $(".back").on('click', function(e){
 $(document).ready(function(){
 	render();
 
-	console.log(window.location.href.split("/"));
-	setTimeout(function() {
-	    $("h1").fadeToggle("slow");
-	}, 500);
-	setTimeout(function() {
-	    $("#header").fadeToggle("slow");
-	    $("p").fadeToggle("slow");
-	    $(".contact").fadeToggle("slow");
-	}, 1000);
+	// console.log(window.location.href.split("/"));
 });
 
 

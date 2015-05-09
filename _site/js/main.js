@@ -34,7 +34,7 @@ $("li:nth-of-type(3)").on('click', function(e){
 	history.pushState({foo: "bar"}, "work page" ,"work");
 });
 
-$("#work a").on('click', function(e){
+$(".back").on('click', function(e){
 	e.preventDefault();
 	$("#work").fadeOut();
 	setTimeout(function(){
@@ -46,15 +46,7 @@ $("#work a").on('click', function(e){
 $(document).ready(function(){
 	render();
 
-	console.log(window.location.href.split("/"));
-	setTimeout(function() {
-	    $("h1").fadeToggle("slow");
-	}, 500);
-	setTimeout(function() {
-	    $("#header").fadeToggle("slow");
-	    $("p").fadeToggle("slow");
-	    $(".contact").fadeToggle("slow");
-	}, 1000);
+	// console.log(window.location.href.split("/"));
 });
 
 
