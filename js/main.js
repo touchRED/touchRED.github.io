@@ -31,7 +31,7 @@ $("li:nth-of-type(3)").on('click', function(e){
 	setTimeout(function(){
 		$("#work").fadeIn();
 	},750);
-	history.pushState({foo: "bar"}, "work page" ,"work");
+	history.pushState({foo: "bar"}, "work page" ,"#/work");
 });
 
 $(".back").on('click', function(e){
@@ -47,6 +47,13 @@ $(window).load(function(){
 	render();
 
 	// console.log(window.location.href.split("/"));
+	console.log(window.location.hash);
+
+	if(window.location.hash == "#/work"){
+		$('#container').hide();
+		$('#work').show();
+	}
+
 });
 
 $(window).load(function(evt){
