@@ -138,6 +138,8 @@ textarea {
     animation-name: first;
     -webkit-animation-duration:1s;
     animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
 }
 
 .second{
@@ -156,11 +158,13 @@ textarea {
     src: url("BIGJOHN.otf");
 }
 
-html{
-    height: 100%;
+html, body{
+    height: auto;
+    width: 100%;
 }
 
 body{
+    height: auto;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -169,6 +173,18 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
+    overflow: scroll;
+}
+
+#background{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0;
     background-image: url("../img/cityscape.JPG");
     background-position: center center;
     background-repeat: no-repeat;
@@ -177,7 +193,7 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    overflow: scroll;
+    z-index: 0;
 }
 
 a, a:hover, a:visited, a:focus{
@@ -193,13 +209,18 @@ a, a:hover, a:visited, a:focus{
 #work .back{
     position: absolute;
     left:10px;
-    top:17.6px;
+    top:1em;
 }
 
-#work div{
-    width: 50%;
-    height: 250px;
-    margin: auto;
+#projects a{
+  display: block;
+  padding-top: 1em;
+}
+
+#projects{
+  top: 150px;
+  position: relative;
+  z-index: 5;
 }
 
 #work img{
@@ -214,7 +235,12 @@ a, a:hover, a:visited, a:focus{
 }
 
 #header{
-    margin-bottom: 15%;
+    padding-top: 1em;
+    opacity: 0;
+    width: 100%;
+}
+
+#container h1{
     opacity: 0;
 }
 
@@ -259,12 +285,15 @@ h1{
 
 ul{
     padding: 0;
-    margin-right: -25px;
+    margin: 0;
+    padding-left: 25px;
+    width: max-content;
 }
 
 li{
     display: inline;
     padding-right: 25px;
+    margin: auto;
 }
 
 p{
@@ -312,7 +341,7 @@ p{
     canvas{
         width: 100%;
     }
-    
+
 }
 @media (max-width: 940px){
     h1{
@@ -326,7 +355,7 @@ p{
     canvas{
         width: 100%;
     }
-    
+
 }
 @media (max-width: 570px){
     h1{
@@ -350,7 +379,7 @@ p{
     #header{
         margin-bottom: 19%;
     }
-    
+
 }
 @media (max-width: 435px){
     h1{
@@ -374,7 +403,7 @@ p{
     #header{
         margin-bottom: 25%;
     }
-    
+
 }
 @media (max-width: 395px){
     body{
@@ -433,11 +462,11 @@ p{
         top:10px;
         font-size: 80%;
     }
-    
+
 }
 
 @media only screen and (max-width: 767px){
-    body{
+    #background: {
         background-image: url("../img/cityscape_mobile.JPG");
     }
 }

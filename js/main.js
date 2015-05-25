@@ -43,10 +43,18 @@ $(".back").on('click', function(e){
 	history.pushState({foo: "foo"}, "home page" ,"/");
 });
 
-$(document).ready(function(){
+$(window).load(function(){
 	render();
 
 	// console.log(window.location.href.split("/"));
 });
 
+$(window).load(function(evt){
+	$('#background').addClass('first');
+	$('#container h1').addClass('first');
+	$('#container p').addClass('second');
+	$('#container a').addClass('second');
+	$('#container p').addClass('second');
+	$('#header').addClass('second');
+});
 
