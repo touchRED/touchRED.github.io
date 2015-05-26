@@ -173,7 +173,9 @@ body{
     font-family: 'Cutive Mono';
     font-size: 110%;
     background-color: #efefef;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
 
 #background{
@@ -198,7 +200,7 @@ body{
 
 a, a:hover, a:visited, a:focus{
     color: #000;
-    border: none;
+    text-decoration: none;
     outline: none;
 }
 
@@ -211,15 +213,16 @@ a, a:hover, a:visited, a:focus{
     position: absolute;
     left:10px;
     top:1em;
+    border-bottom: 1px solid black;
+    line-height: 1.3em;
 }
 
 #projects a{
-  display: block;
   padding-top: 1em;
 }
 
 #projects{
-  padding-top: 12%;
+  padding-top: 14%;
   position: relative;
   z-index: 5;
 }
@@ -241,6 +244,10 @@ a, a:hover, a:visited, a:focus{
     width: 100%;
 }
 
+#header a{
+    border-bottom: 1px solid black;
+}
+
 #container h1{
     opacity: 0;
 }
@@ -254,7 +261,7 @@ h1{
     margin: 0;
     left: 25%;
     right: 25%;
-    top:10%;
+    top:11%;
     font-size: 100px;
     width: 50%;
     line-height: 125px;
@@ -305,17 +312,21 @@ p{
     opacity: 0;
 }
 
+p a{
+    border-bottom: 1px solid black;
+}
+
 #mag{
     color: #CB06A0;
-    top: 10%;
+    top: 11%;
 }
 #yell{
     color: #FFF937;
-    top: 11%;
+    top: 12%;
 }
 #cyan{
     color: #3FD7EE;
-    top: 9%;
+    top: 10%;
 }
 
 
@@ -329,6 +340,16 @@ p{
     h1{
         font-size: 75px;
         line-height: 90px;
+        top:13%;
+    }
+    #mag{
+        top:13%;
+    }
+    #yell{
+        top:14%;
+    }
+    #cyan{
+        top:12%;
     }
     p{
         top: 37%;
@@ -343,12 +364,8 @@ p{
         font-size: 50px;
         line-height: 60px;
     }
-
     p{
         top: 28%;
-    }
-    canvas{
-        width: 100%;
     }
 
 }
@@ -426,9 +443,6 @@ p{
     body{
         width: 100%;
     }
-    canvas{
-        width: 100%;
-    }
     h1{
         font-size: 35px;
         line-height: 50px;
@@ -444,9 +458,6 @@ p{
     }
     li{
         font-size: 80%;
-    }
-    ul{
-        margin-top:0;
     }
     #work a{
         top:1em;
