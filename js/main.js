@@ -11,31 +11,6 @@ $(document).mousemove(function(e){
 
 var render = function(){
 	requestAnimationFrame(render);
-	// if(window.matchMedia("(max-width: 1100px)").matches){
-	// 	mag.css("top", 13 + Math.sin(mouseX/150) + "%");
-	// 	cyan.css("top", 13 + Math.cos(mouseX/150) + "%");
-	// 	yell.css("top", 13 + Math.sin(mouseX/150-1) + "%");
-	// }else if(window.matchMedia("(max-width: 940px)").matches){
-	// 	mag.css("top", 13 + Math.sin(mouseX/150) + "%");
-	// 	cyan.css("top", 13 + Math.cos(mouseX/150) + "%");
-	// 	yell.css("top", 13 + Math.sin(mouseX/150-1) + "%");
-	// }else if(window.matchMedia("(max-width: 570px)").matches){
-	// 	mag.css("top", 11 + Math.sin(mouseX/150) + "%");
-	// 	cyan.css("top", 11 + Math.cos(mouseX/150) + "%");
-	// 	yell.css("top", 11 + Math.sin(mouseX/150-1) + "%");
-	// }else if(window.matchMedia("(max-width: 500px)").matches){
-	// 	mag.css("top", 11 + Math.sin(mouseX/150) + "%");
-	// 	cyan.css("top", 11 + Math.cos(mouseX/150) + "%");
-	// 	yell.css("top", 11 + Math.sin(mouseX/150-1) + "%");
-	// }else if(window.matchMedia("(max-width: 450px)").matches){
-	// 	mag.css("top",  13 + Math.sin(t) + "%");
-	// 	cyan.css("top",  13 + Math.cos(t) + "%");
-	// 	yell.css("top",  13 + Math.sin(t-1) + "%");
-	// }else{
-	// 	mag.css("top",  13 + Math.sin(t) + "%");
-	// 	cyan.css("top",  13 + Math.cos(t) + "%");
-	// 	yell.css("top",  13 + Math.sin(t-1) + "%");
-	// }
 
 	if(window.matchMedia("(min-width: 1100px)").matches){
 		mag.css("top", 11 + Math.sin(mouseX/150) + "%");
