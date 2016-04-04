@@ -242,6 +242,7 @@ a, a:hover, a:visited, a:focus{
     padding-top: 1em;
     opacity: 0;
     width: 100%;
+    margin: auto;
 }
 
 #header a{
@@ -293,7 +294,7 @@ h1{
 
 ul{
     padding: 0;
-    margin: 0;
+    margin: auto;
     padding-left: 25px;
     width: max-content;
 }
@@ -317,17 +318,21 @@ p a{
 }
 
 #mag{
+    position: absolute;
     color: #CB06A0;
     top: 11%;
 }
 #yell{
+    position: absolute;
     color: #FFF937;
     top: 12%;
 }
 #cyan{
+    position: absolute;
     color: #3FD7EE;
     top: 10%;
 }
+
 
 
 
