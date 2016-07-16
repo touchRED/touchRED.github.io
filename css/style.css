@@ -141,6 +141,7 @@ body{
   padding: 0;
   font-family: "Cutive Mono", monospace;
   color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -200,12 +201,23 @@ nav a, .back{
   text-align: center;
 }
 
+/*#mag{
+    color: #CB06A0;
+}
+#yell{
+    color: #FFF937;
+}
+#cyan{
+    color: #3FD7EE;
+}*/
+
 .main h1{
   font-family: "Big John", "Helvetica Neue", sans-serif;
   font-size: 8vw;
   line-height: 8vw;
   width: 50vw;
   margin: 30px auto 0px;
+  color:#303030;
   opacity: 0;
 }
 
@@ -239,12 +251,6 @@ nav a, .back{
   text-align: center;
 }
 
-.work h1{
-  font-family: "Big John", "Helvetica Neue", sans-serif;
-  font-size: 7vw;
-  line-height: 7vw;
-}
-
 .back{
   position: absolute;
   top: 10px;
@@ -267,10 +273,10 @@ nav a, .back{
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
+  background-color: #fff;
 }
 
 .project:nth-child(1){
-  background-color: #fff;
   background-image: url("../img/blox.png");
 }
 
@@ -280,7 +286,6 @@ nav a, .back{
 }
 
 .project:nth-child(3){
-  background-color: #fff;
   background-image: url("../img/3ten.png");
 }
 
