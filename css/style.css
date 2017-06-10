@@ -59,33 +59,49 @@ blockquote, q {
    ========================================================================== */
 
 body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #FFFFFF;
-  font-family: "Cutive Mono", monospace;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  letter-spacing: 1.3px;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  padding-left: 20px; 
-  padding-top: 20px;
+  padding-left: 20px;
+  padding-top: 180px;
 }
 
 img{
   display: block;
-  width: 50vw;
-  height: 50vw;
-  max-width: 300px;
-  max-height: 300px;
+  width: auto;
+  height: auto;
+  max-width: 350px;
+  max-height: 350px;
   margin-bottom: 15px;
 }
 
+.me a{
+  color: black;
+  border-bottom: 1px solid black;
+  font-family: "Cutive Mono", monospace;
+}
+
 .main{
-  float: left;
+  /*float: left;*/
+  width: 45vw;
+  /*background: pink;*/
+  margin-left: 25px;
   margin-bottom: 100px;
 }
 
 a{
-  color: black;
+  color: #FF5A5F;
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #FF5A5F;
 }
+
 
 .twit{
   display: inline-block;
@@ -94,23 +110,25 @@ a{
 }
 
 p{
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 20px;
-  width: 50vw;
-  font-weight: 100;
-  line-height: 25px;
+  width: auto;
+  /*background: honeydew;*/
+  /*font-weight: 100;*/
+  line-height: 35px;
 }
 
 ul{
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 40px;
   list-style: circle outside none;
 }
 
 li{
   margin-left: 60px;
   padding-left: 0px;
-  padding-top: 25px;
-  line-height: 20px;
+  padding-top: 10px;
+  line-height: 40px;
   font-size: 20px;
   /*list-style-type: none;*/
 }
@@ -119,14 +137,58 @@ li{
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 650px){
-    p{
-      width: 90vw;
-      font-size: 16px;
+@media only screen and (max-width: 1100px){
+    img{
+      max-width: 230px;
+      max-height: 230px;
     }
-
-    li{
-      margin-left: 40px;
+    p, li{
       font-size: 16px;
+      line-height: 30px;
+    }
+    p{
+      margin-bottom: 15px;
+    }
+    li{
+
+    }
+}
+
+@media only screen and (max-width: 800px){
+    body{
+      flex-direction: column;
+      /*padding-left: 100px;*/
+      height: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 15vh;
+    }
+    .me{
+      width: 40vw;
+      /*background: pink;*/
+    }
+    .me a{
+      font-size: 90%;
+      letter-spacing: 1px;
+    }
+    img{
+      width: 225px;
+      max-width: none;
+      max-height: none;
+    }
+    .main{
+      margin-left: 0px;
+      /*width: 550px;*/
+      width: auto;
+      max-width: 550px;
+    }
+    p{
+      /*font-size: 3vw;*/
+      font-size: 100%;
+      line-height: 150%;
+    }
+    li{
+      font-size: 100%;
+      line-height: 150%;
     }
 }
