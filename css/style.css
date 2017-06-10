@@ -102,7 +102,9 @@ a{
   border-bottom: 1px solid #FF5A5F;
 }
 
-
+.b{
+  font-weight: 700;
+}
 .twit{
   display: inline-block;
   margin-top: 15px;
