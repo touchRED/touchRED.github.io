@@ -58,6 +58,10 @@ blockquote, q {
    Styles
    ========================================================================== */
 
+::selection{
+  background: #96F8F8;
+}
+
 body{
   height: 100vh;
   display: flex;
@@ -70,15 +74,15 @@ body{
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   padding-left: 20px;
-  padding-top: 180px;
+  padding-top: 100px;
 }
 
 img{
   display: block;
   width: auto;
   height: auto;
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 250px;
+  max-height: 250px;
   margin-bottom: 15px;
 }
 
@@ -90,16 +94,24 @@ img{
 
 .main{
   /*float: left;*/
-  width: 45vw;
+  width: 40vw;
   /*background: pink;*/
   margin-left: 25px;
   margin-bottom: 100px;
 }
 
 a{
-  color: #FF5A5F;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px solid #FF5A5F;
+  /*border-bottom: 1px solid #4DDEFF;*/
+  /*border-bottom: 1px solid #FF5A5F;*/
+  border-bottom: 2px solid #96F8F8;
+  transition: background 0.2s ease-in-out;
+}
+
+a:hover{
+  /*background: #6AF6F6;*/
+  background: #96F8F8;
 }
 
 .b{
@@ -113,26 +125,11 @@ a{
 
 p{
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 16px;
   width: auto;
   /*background: honeydew;*/
   /*font-weight: 100;*/
-  line-height: 35px;
-}
-
-ul{
-  margin-top: 0px;
-  margin-bottom: 40px;
-  list-style: circle outside none;
-}
-
-li{
-  margin-left: 60px;
-  padding-left: 0px;
-  padding-top: 10px;
-  line-height: 40px;
-  font-size: 20px;
-  /*list-style-type: none;*/
+  line-height: 30px;
 }
 
 /* ==========================================================================
@@ -144,15 +141,8 @@ li{
       max-width: 230px;
       max-height: 230px;
     }
-    p, li{
-      font-size: 16px;
-      line-height: 30px;
-    }
     p{
       margin-bottom: 15px;
-    }
-    li{
-
     }
 }
 
@@ -187,10 +177,6 @@ li{
     p{
       /*font-size: 3vw;*/
       font-size: 100%;
-      line-height: 150%;
-    }
-    li{
-      font-size: 100%;
-      line-height: 150%;
+      line-height: 30px;
     }
 }

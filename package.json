@@ -10,5 +10,8 @@
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browserify": "^14.4.0"
   }
 }
