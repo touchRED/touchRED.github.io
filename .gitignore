@@ -1,4 +1,5 @@
 .DS_Store
+*/.DS_Store
 js/.DS_Store
 node_modules/
 gulpfile.js
