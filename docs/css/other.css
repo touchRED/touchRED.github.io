@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+
+@font-face{
+    font-family: "Big John";
+    src: url("BIGJOHN.otf");
+}
+
+/* ==========================================================================
+   Styles
+   ========================================================================== */
+
+body{
+  /*background-color: #F0F0F0;*/
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+header, .things, footer{
+  width: 70vw;
+  /*height: 100px;*/
+  margin: 0 auto;
+  /*border: 1px solid black;*/
+}
+
+header{
+  padding-top: 100px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgba(0,0,0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: honeydew;*/
+}
+
+header h1{
+  color: rgba(0,0,0, 0.85);
+  margin-bottom: 30px;
+  font-family: "Big John", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 300%;
+  letter-spacing: 15px;
+  /*background: pink;*/
+}
+
+header h1 a{
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin: 0px;
+  padding-left: 7px;
+  text-align: center;
+  /*background: pink;*/
+  box-sizing: border-box;
+}
+
+header h1 a:hover{
+  color: rgba(0,0,0, 1);
+  text-decoration: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  padding: 0;
+  margin: 0;
+  /*background-color: pink;*/
+  width: 40%;
+}
+
+nav a{
+  width: 20%;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 200;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+nav a.active{
+  color: rgba(0,0,0,0.7);
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+nav a:hover{
+  color: rgba(0,0,0,0.7);
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+nav a:focus{
+  outline: 0;
+}
+
+.things{
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.section{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  font-family: "Cutive Mono", monospace;
+  font-style: italic;
+}
+
+
+.active-section{
+  display: flex;
+}
+
+.about{
+  justify-content: center;
+}
+
+.about p{
+  /*width: 20%;*/
+}
+
+.about img{
+  width: 24%;
+  height: 24%;
+  border-radius: 200px;
+  margin: 0px 115px 20px 100px;
+}
+
+.bio{
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  width: 70%;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+.thing{
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(0,0,0, 0.2);
+  margin-bottom: 20px;
+}
+
+footer{
+  margin-bottom: 100px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1020px){
+    nav{
+      width: 50%;
+    }
+
+    nav a{
+      width: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    nav{
+      width: 80%;
+    }
+
+    nav a{
+      width: 30%;
+      font-size: 15px;
+    }
+
+    .about p:nth-of-type(1){
+      display: none;
+    }
+
+    .about p:nth-of-type(2){
+      display: none;
+    }
+
+    .about img{
+      width: 45%;
+      height: 45%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    header{
+      padding-top: 60px;
+      width: 85vw;
+    }
+
+    header h1{
+      font-size: 200%;
+      margin-bottom: 35px;
+      padding: 0px;
+      width: 100%;
+    }
+
+    nav{
+      width: 100%;
+    }
+
+    nav a{
+      width: 30%;
+      /*font-size: 15px;*/
+    }
+
+    .about p{
+      text-align: left;
+      width: 100%;
+    }
+
+    footer, .things{
+      width: 85vw;
+    }
+}
+
+
+.

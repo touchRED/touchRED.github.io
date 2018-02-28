@@ -1,0 +1,20 @@
+---
+layout: continue
+title: code
+permalink: /code/index.html
+---
+
+<!-- <p>code!!!!</p> -->
+
+{% for item in site.code %}
+  <div class = "project">
+    <div class = "preview">
+      <a href="{{ item.url }}">
+        <img src = {{ item.image | absolute_url }}>
+      </a>
+    </div>
+    <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+    <p>{{ item.description }}</p>
+    <p class = "tech">{{ item.tech }}</p>
+  </div>
+{% endfor %}

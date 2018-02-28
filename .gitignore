@@ -3,4 +3,4 @@
 js/.DS_Store
 node_modules/
 gulpfile.js
-.gitignore
+_site
