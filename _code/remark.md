@@ -1,13 +1,16 @@
 ---
-title: Remark – A Language Evolution Simulator
+title: Remark
 image: /img/remark.png
-description: I have several friends that love linguistics, so for UGA’s Simualtions and Modeling course, I made a simple language evolution tool that models common phonological change. I recently redesigned it, and I hope to add more features in the future.
+description: A Language Evolution Simulator.
 tech: p5.js, dat.gui
 layout: continue
+order: 5
 ---
 
 ![remark]({{ "/img/remark.png" | absolute_url }})
 
-# Remark – A Language Evolution Simulator
+# Remark – [link](http://ctrotter.co/remark/), [code](https://github.com/touchRED/remark)
 
-Made for CSCI 4210 Simulations and Modeling at the University of Georgia.
+A few of my friends love linguistics, so for UGA’s Simulations and Modeling course, I made a simple language evolution tool that models common phonological change. I recently redesigned it, and I hope to add more features in the future.
+
+I also wrote an [essay](https://docs.google.com/document/d/1LfJRIlZXBmoGWQnrlBd95aWq4pUlPBe6v0Li3Pp9H-A/edit?usp=sharing) on it, which you can read if you're into that.

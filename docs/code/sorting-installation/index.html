@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Connor Trotter - Design Technologist">
+        <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height">
+        <title>Connor Trotter - Design Technologist</title>
+        <link rel="stylesheet" href=http://localhost:4000/css/normalize.css>
+        <link rel="stylesheet" href=http://localhost:4000/css/style.css>
+        <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <script src=http://localhost:4000/js/vendor/modernizr-2.6.2.min.js></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class = "container">
+          <div class="me">
+            <a href="/">
+              <img src=http://localhost:4000/img/me.jpg>
+            </a>
+            <a href = "mailto:mail@ctrotter.co" target="_blank">mail@ctrotter.co</a><br>
+            <a href = "http://twitter.com/cornertrotter" target="_blank" class="twit">@cornertrotter</a>
+            <p class = "links">
+              <a href = "/code/">projects</a> 
+              <!-- /
+              <a href = "/art/">art</a> /
+              <a href = "/music/">music</a> -->
+            </p>
+          </div>
+          <div class="main">
+              <p><img src="http://localhost:4000/img/sorting_trio/trio.jpg" alt="sorted pixels" /></p>
+
+<h1 id="trio-gallery-installation">Trio Gallery Installation</h1>
+
+<p>Last year, I got to set up my first interactive installation at the new <a href="https://www.trioathens.com/">Trio Contemporary Art Gallery</a> in Athens. I was deep in my investigation of pixel sorting at the time, and I thought it could be really fun to drop people into the process and let them control the sorting themselves.</p>
+
+<p>The installation is based around sorting a 7,000px by 7,000px rendering of <a href="https://en.wikipedia.org/wiki/Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son#/media/File:Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg">Monet’s “Woman with a Parasol”</a>. Viewers use their hands to travel through the painting in a 600px x 600px window, sorting everything in view. I used a Leap Motion hand sensor for the interaction, and hooked it up to an <a href="http://openframeworks.cc/">openFrameworks</a> app running the sorting process.</p>
+
+<p>Here are some more pics, taken at the <a href="http://ideasforcreativeexploration.com/">Ideas for Creative Exploration</a> studio:</p>
+
+<p><img src="http://localhost:4000/img/sorting_trio/video.gif" alt="wide view" />
+<img src="http://localhost:4000/img/sorting_trio/closeup.gif" alt="sorting window" />
+<img src="http://localhost:4000/img/sorting_trio/tech.JPG" alt="technology" />
+<img src="http://localhost:4000/img/sorting_trio/studio.JPG" alt="studio" />
+<br />
+<br />
+<br />
+<br /></p>
+
+          </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src=http://localhost:4000/js/plugins.js></script>
+        <script src=http://localhost:4000/js/main.js></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='http://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-34845843-1');ga('send','pageview');
+        </script>
+    </body>
+</html>

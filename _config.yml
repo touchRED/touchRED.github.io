@@ -3,11 +3,6 @@ permalink: pretty
 collections:
   code:
     output: true
-    # permalink: pretty
-  # art:
-  #   output: true
-  #   permalink: pretty
-  # music:
-  #   output: true
-  #   permalink: pretty
+  # art
+  # music
 destination: docs
