@@ -101,6 +101,10 @@ body{
   position: relative;
 }
 
+.fixedHeight{
+  height: 410px;
+}
+
 .me a{
   color: black;
   border-bottom: 1px solid black;
