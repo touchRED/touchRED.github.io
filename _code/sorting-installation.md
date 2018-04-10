@@ -4,7 +4,7 @@ image: /img/sorting_trio/trio.jpg
 description: My interactive pixel sorting installation for Trio Gallery.
 tech: leap motion, c++, openFrameworks
 layout: continue
-order: 4
+order: 5
 ---
 
 ![sorted pixels]({{ "/img/sorting_trio/trio.jpg" | absolute_url }})

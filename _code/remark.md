@@ -4,7 +4,7 @@ image: /img/remark.png
 description: A Language Evolution Simulator.
 tech: p5.js, dat.gui
 layout: continue
-order: 5
+order: 6
 ---
 
 ![remark]({{ "/img/remark.png" | absolute_url }})

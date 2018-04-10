@@ -1,10 +1,10 @@
 ---
 title: RGB Knot Installation
 image: /img/light_knot/light_knot.jpg
-description: Suspending a knot in three-dimensional color space.
+description: Suspending a knot in a three-dimensional color cube.
 tech: processing, arduino, neopixel lights
 layout: continue
-order: 1
+order: 3
 ---
 
 ![light knot]({{ "/img/light_knot/light_knot.jpg" | absolute_url }})

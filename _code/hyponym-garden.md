@@ -4,7 +4,7 @@ image: /img/hyponym-garden/hyponym_preview.gif
 description: Navigating image culture through language.
 tech: p5.js, wordnik api, giphy api
 layout: continue
-order: 3
+order: 4
 ---
 
 ![hyponym garden]({{ "/img/hyponym-garden/hyponym_recording.gif" | absolute_url }})
