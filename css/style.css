@@ -158,14 +158,17 @@ a{
   color: black;
   text-decoration: none;
   /*border-bottom: 1px solid #4DDEFF;*/
-  /*border-bottom: 1px solid #FF5A5F;*/
-  border-bottom: 2px solid #96F8F8;
-  transition: background 0.2s ease-in-out;
+  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid #96F8F8; */
+  -webkit-transition: background 0.2s, border 0.5s;
+  -moz-transition: background 0.2s, border 0.5s;
+  -o-transition: background 0.2s, border 0.5s;
+  transition: background 0.2s, border 0.5s;
 }
 
-a:hover{
+/* a:hover{
   background: #96F8F8;
-}
+} */
 
 .preview > a{
   border: none;

@@ -1,26 +1,35 @@
-// $(".back").on('click', function(e){
-// 	e.preventDefault();
-// 	$(".work").fadeOut();
-// 	setTimeout(function(){
-// 		$(".main").fadeIn();
-// 	},750);
-// 	history.pushState({foo: "foo"}, "home page" ,"/");
-// });
+let links = [];
+let colors = [];
 
-// $(window).load(function(){
-// 	render();
+function setup(){
+  let m = select(".main");
+  links = selectAll("a", m);
 
-// 	if(window.location.hash == "#/work"){
-// 		$('.main').hide();
-// 		$('.work').show();
-// 	}
+  for(let l of links){
+    let c = floor(random(360));
+    colors.push(c);
+    l.style('border-bottom', '2px solid hsl(' + c + ' 100% 80%)');
+    l.mouseOver(function(){
+      l.style('background', 'hsl(' + c + ' 100% 80%)');
+    });
+    l.mouseOut(function(){
+      l.style('background', 'white');
+    });
+  }
 
-// });
+  setInterval(changeColor, 500);
+}
 
-// $(window).load(function(evt){
-// 	$('.background').addClass('first');
-// 	$('.main h1').addClass('first');
-// 	$('.main p').addClass('second');
-// 	$('.main a').addClass('second');
-// 	$('header').addClass('second');
-// });
+function changeColor(){
+  for(let l of links){
+    let c = floor(random(360));
+    colors.push(c);
+    l.style('border-bottom', '2px solid hsl(' + c + ' 100% 80%)');
+    l.mouseOver(function(){
+      l.style('background', 'hsl(' + c + ' 100% 80%)');
+    });
+    l.mouseOut(function(){
+      l.style('background', 'white');
+    });
+  }
+}
