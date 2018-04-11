@@ -1,37 +1,37 @@
 let links = [];
 let colors = [];
+let time;
 
 function setup(){
   let m = select(".main");
   links = selectAll("a", m);
+  time = random(100);
 
-  if(window.matchMedia("only screen and (max-width: 660px)").matches) return;
+  if(window.matchMedia("only screen and (max-width: 800px)").matches) return;
 
-  for(let l of links){
-    let c = floor(random(360));
+  for(let i = 0; i < links.length; i++){
+    let c = floor(360 * pow(sin((i + 1) * 0.05 + time), 2));
     colors.push(c);
-    l.style('border-bottom', '2px solid hsl(' + c + ' 100% 80%)');
-    l.mouseOver(function(){
-      l.style('background', 'hsl(' + c + ' 100% 80%)');
+    links[i].style('border-bottom', '3px solid hsl(' + c + ' 100% 80%)');
+    links[i].mouseOver(function(){
+      links[i].style('background', 'hsl(' + c + ' 100% 80%)');
     });
-    l.mouseOut(function(){
-      l.style('background', 'white');
+    links[i].mouseOut(function(){
+      links[i].style('background', 'white');
     });
   }
 
-  setInterval(changeColor, 500);
+  setInterval(changeColor, 100);
 }
 
 function changeColor(){
-  for(let l of links){
-    let c = floor(random(360));
+  for(let i = 0; i < links.length; i++){
+    let c = floor(360 * pow(sin((i + 1) * 0.05 + time), 2));
     colors.push(c);
-    l.style('border-bottom', '2px solid hsl(' + c + ' 100% 80%)');
-    l.mouseOver(function(){
-      l.style('background', 'hsl(' + c + ' 100% 80%)');
-    });
-    l.mouseOut(function(){
-      l.style('background', 'white');
+    links[i].style('border-bottom', '3px solid hsl(' + c + ' 100% 80%)');
+    links[i].mouseOver(function(){
+      links[i].style('background', 'hsl(' + c + ' 100% 80%)');
     });
   }
+  time -= 0.05;
 }
