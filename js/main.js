@@ -5,6 +5,8 @@ function setup(){
   let m = select(".main");
   links = selectAll("a", m);
 
+  if(window.matchMedia("only screen and (max-width: 800px)").matches) return;
+
   for(let l of links){
     let c = floor(random(360));
     colors.push(c);
