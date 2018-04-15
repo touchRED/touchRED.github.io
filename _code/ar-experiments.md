@@ -1,13 +1,13 @@
 ---
 title: AR Experiments
-image: /img/ar/squares.png
+image: /img/ar/squares.jpeg
 description: sketches I've created while learning augmented reality design
 tech: c++, openFrameworks, ARKit
 layout: continue
 order: 1
 ---
 
-![ar squares]({{ "/img/ar/squares.png" | absolute_url }})
+![ar squares]({{ "/img/ar/squares.jpeg" | absolute_url }})
 
 # AR Experiments - [code](https://github.com/touchRED/ar-experiments)
 
