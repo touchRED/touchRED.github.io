@@ -1,7 +1,7 @@
-<p style="text-align: center;">
+<div style="display: flex; justify-content: center;">
 
 ![](img/objective.gif)
 
-</p>
+</div>
 
 ![](img/kite.png)
