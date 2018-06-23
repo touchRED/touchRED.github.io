@@ -1,3 +1,2 @@
 #Connor Trotter
 ---
-personal
