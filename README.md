@@ -1,3 +1,3 @@
-![]("img/objective.gif")
+![](img/objective.gif)
 
-![]("img/kite.png")
+![](img/kite.png)
