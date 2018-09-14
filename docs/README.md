@@ -1,2 +1,3 @@
-#Connor Trotter
----
+![](img/objective.gif)
+
+![](img/kite.png)
