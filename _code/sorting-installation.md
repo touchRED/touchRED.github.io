@@ -18,6 +18,8 @@ The installation is based around sorting the pixels of a 7,000 x 7,000 rendering
 Here are some more pics, taken at the [Ideas for Creative Exploration](http://ideasforcreativeexploration.com/) studio:
 
 !\[wide view\]({{ "/img/sorting_trio/video.gif" | absolute_url }})
+
+
 !\[sorting window\]({{ "/img/sorting_trio/closeup.gif" | absolute_url }})
 !\[technology\]({{ "/img/sorting_trio/tech.JPG" | absolute_url }})
 !\[studio\]({{ "/img/sorting_trio/studio.JPG" | absolute_url }})
